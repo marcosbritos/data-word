@@ -1,0 +1,16 @@
+.nosotros{
+    margin-top: 5%;
+    @include margin(15%, 15%);
+    font-size: large;
+    text-align: justify;
+
+}
+
+.nosotrosimg{
+    margin-left: 25%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    width: 50%;
+    height: 50%;
+    border-radius: 2%;
+}

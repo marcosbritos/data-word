@@ -1,0 +1,65 @@
+.contenedor{
+    display: grid;
+    font-size:large;
+    text-align:left;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "titulo2 titulo2"
+    "texto1 img1"
+    "img2 texto2"
+    "texto3 img3";
+
+.titulo2{
+    grid-area: titulo2;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 3%;
+}
+
+.img2{
+    grid-area: img2;
+    @include tamanos(70vh, 50vh);
+    display: inline;
+    margin-left:20% ;
+    border-radius: 2%;
+}
+
+.texto2{
+    grid-area: texto2;
+    @include margin(5%, 20%);
+    margin-top: 10%;
+}
+
+.texto1{
+    grid-area: texto1;
+    @include margin(5%, 20%);
+    margin-top: 10%;
+}
+
+.img1{
+    grid-area: img1;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    @include tamanos(70vh, 50vh);
+    display: inline;
+    margin-left: 10%;
+    border-radius: 2%;
+}
+
+.img3{ 
+    grid-area: img3;
+    @include tamanos(70vh, 50vh);
+    display: inline;
+    margin-left: 10%;
+    border-radius: 2%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.texto3{
+    grid-area: texto3;
+    @include margin(5%, 20%);
+    margin-top: 12%;
+}
+}
